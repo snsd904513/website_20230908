@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <script src="./js/toggle-menu.js"></script>
+  <script src="./js/images.js"></script>
+  <script src="./js/date.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header-inner">
+        <a class="header-logo" href="#">
+          <img src="./images/shisa.png" alt="">
+          <button class="toggle-menu-button"></button>
+          <div class="header-side-menu">
+            <nav class="side-menu">
+              <ul>
+                <li><a href="#link1">サイトについて</a></li>
+                <li><a href="#link2">自己紹介</a></li>
+                <li><a href="#link3">成果物</a></li>
+                <li><a href="#link4">お問い合わせ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </a>
+      </div>
+      <div class="date-info">
+        <p id="current-date">Date</p>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <div class="first-view">
+        <div class="image-container">
+          <img class="image" src="./images/13a9718e-e488-4689-a842-f1a87a364d2c-x4.jpg">
+          <img class="image" src="./images/S__114450442.jpg">
+          <img class="image" src="./images/mount.jpg">
+        </div>
+      </div>
+
+      <!-- このサイトについて section -->
+      <section class="this-site">
+        <h2><a id="link1">サイトについて</a></h2>
+        <div class="text">
+          <p>
+            ここは新垣のポートフォリオサイトです。</br>
+            これまでに作成した制作物や身につけたスキルをまとめています。</br>
+            まだまだ至らない点もありますが、日々、スキル向上に努めています。</br>
+            どうぞお茶でも飲みながらゆっくりととサイト内を散策してください。</br>
+            何かご質問等ありましたらページ下部のお問い合わせフォームより</br>
+            お気軽にご連絡ください。
+          </p>
+        </div>
+
+      </section>
+
+      <!-- 自己紹介 section -->
+      <section class="introduction">
+        <h2><a id="link2">自己紹介</a></h2>
+        <div class="introductionmsg">
+          <div class="ballon">
+            私は〇〇大学の〇〇学部に在籍しています。
+            ITに関することは扱わない学部ですが、
+            大学1年生の頃にプログラミングを興味本位で始めたことがきっかけです。 
+            最初は「〇〇」というプログラミング教育サービスを活用して、基本を学習し、
+            その後は模写コーディングやオリジナルのWebサイトを作成して、
+            プログラミングスキルを身に付けました。 
+            現在は大学に通いながら、クラウドソーシングを活用して案件を獲得し、プログラマーとしても働いています。
+            最高で15万円の案件を受注し、納品したといった経験もございます。
+          </div>
+          
+          <div class="human">
+            <img src="./images/12981_color.png" alt="">
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 成果物 section -->
+      <section class="achivements">
+        <h2><a id="link3">成果物</a></h2>
+        <div class="icon">
+          <ul class="icon-list">
+            <li><img src="./images/python_vertical_logo_icon_168039.png" alt=""></li>
+            <li><img src="./images/java_original_wordmark_logo_icon_146459.png" alt=""></li>
+            <li><img src="./images/mysql_original_wordmark_logo_icon_146417.png" alt=""></li>
+            <li><img src="./images/HTML.png" alt=""></li>
+            <li><img src="./images/CSS.png" alt=""></li>
+            <li><img src="./images/javascript.png" alt=""></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- お問い合わせsection -->
+      <section class="contact">
+        <h2><a id="link4">お問い合わせ</a></h2>
+        <p>最後までご覧いただき、ありがとうございました。<br>
+          このポートフォリオや私について、何かコメントがありましたら下記フォームをご利用ください。</p>
+        <form action="#">
+          <dl class="form-area">
+            <dt><span class="required">氏名</span></dt>
+            <dd><input class="input-text" type="text" name="name" required></dd>
+            <dt><span class="required">メールアドレス</span></dt>
+            <dd><input class="input-text" type="email" name="email" required></dd>
+            <dt><span class="required">お電話番号</span></dt>
+            <dd><input class="input-text" type="tel" name="tel" required></dd>
+            <dt><span class="required">お問い合わせ内容</span></dt>
+            <dd><textarea class="message" name="message" required></textarea></dd>
+          </dl>
+
+          <div class="send">
+            <p class="confirm-text">ご入力内容を確認の上、[送信]ボタンを押してください</p>
+            <button class="submit-button" type="submit">送信</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <h3>Thank you for coming!</h3>
+        <div class="footer-container">
+          <a class="footer-logo" href="#">
+            <img src="./images/okinawa-japan-flag-symbol (4).png" alt="">
+          </a>
+          <p class="copyright"><small>&copy;2023 Arakaki</small></p>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
